@@ -13,7 +13,7 @@
 ## Usage
 
 ```console
-npm i libp2p-connection
+npm i @libp2p/libp2p-connection
 ```
 
 ```javascript
