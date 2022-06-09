@@ -1,11 +1,3 @@
-## 1.0.0 (2022-06-09)
-
-
-### Trivial Changes
-
-* initial commit [skip ci] ([1bf76de](https://github.com/libp2p/js-libp2p-connection/commit/1bf76dee4e364f9c64c5753a276ced391a8a4233))
-* update readme and project config ([#1](https://github.com/libp2p/js-libp2p-connection/issues/1)) ([abad08b](https://github.com/libp2p/js-libp2p-connection/commit/abad08ba5224270c45dad32991041dee46a910ce))
-
 ## [@libp2p/connection-v2.0.3](https://github.com/libp2p/js-libp2p-interfaces/compare/@libp2p/connection-v2.0.2...@libp2p/connection-v2.0.3) (2022-05-24)
 
 
