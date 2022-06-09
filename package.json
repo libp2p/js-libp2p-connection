@@ -3,13 +3,13 @@
   "version": "2.0.3",
   "description": "JS Libp2p connections",
   "license": "Apache-2.0 OR MIT",
-  "homepage": "https://github.com/libp2p/js-libp2p-interfaces/tree/master/packages/libp2p-connection#readme",
+  "homepage": "https://github.com/libp2p/js-libp2p-connection#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/libp2p/js-libp2p-interfaces.git"
+    "url": "git+https://github.com/libp2p/js-libp2p-connection.git"
   },
   "bugs": {
-    "url": "https://github.com/libp2p/js-libp2p-interfaces/issues"
+    "url": "https://github.com/libp2p/js-libp2p-connection/issues"
   },
   "keywords": [
     "interface",
