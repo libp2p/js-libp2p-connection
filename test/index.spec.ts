@@ -2,7 +2,7 @@ import { createConnection } from '../src/index.js'
 import * as PeerIdFactory from '@libp2p/peer-id-factory'
 import { pair } from 'it-pair'
 import { Multiaddr } from '@multiformats/multiaddr'
-import type { Stream } from '@libp2p/interfaces/connection'
+import type { Stream } from '@libp2p/interface-connection'
 
 const peers = [{
   id: 'QmNMMAqSxPetRS1cVMmutW5BCN1qQQyEr4u98kUvZjcfEw',

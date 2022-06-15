@@ -1,9 +1,9 @@
 import type { Multiaddr } from '@multiformats/multiaddr'
 import errCode from 'err-code'
-import { OPEN, CLOSING, CLOSED } from '@libp2p/interfaces/connection/status'
-import { symbol } from '@libp2p/interfaces/connection'
-import type { Connection, ConnectionStat, Metadata, ProtocolStream, Stream } from '@libp2p/interfaces/connection'
-import type { PeerId } from '@libp2p/interfaces/peer-id'
+import { OPEN, CLOSING, CLOSED } from '@libp2p/interface-connection/status'
+import { symbol } from '@libp2p/interface-connection'
+import type { Connection, ConnectionStat, Metadata, ProtocolStream, Stream } from '@libp2p/interface-connection'
+import type { PeerId } from '@libp2p/interface-peer-id'
 import { logger } from '@libp2p/logger'
 import type { AbortOptions } from '@libp2p/interfaces'
 
