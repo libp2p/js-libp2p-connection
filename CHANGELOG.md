@@ -1,3 +1,14 @@
+## [3.0.0](https://github.com/libp2p/js-libp2p-connection/compare/v2.0.4...v3.0.0) (2022-06-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* uses new single-issue libp2p interface modules
+
+### Features
+
+* update to latest libp2p interfaces ([#6](https://github.com/libp2p/js-libp2p-connection/issues/6)) ([af0712c](https://github.com/libp2p/js-libp2p-connection/commit/af0712c06771a4a02367e7006f7d80ecec8ba002))
+
 ### [2.0.4](https://github.com/libp2p/js-libp2p-connection/compare/v2.0.3...v2.0.4) (2022-06-09)
 
 
