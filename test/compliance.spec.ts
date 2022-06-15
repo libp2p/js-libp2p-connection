@@ -1,10 +1,10 @@
-import tests from '@libp2p/interface-compliance-tests/connection'
+import tests from '@libp2p/interface-connection-compliance-tests'
 import { createConnection } from '../src/index.js'
-import peers from '@libp2p/interface-compliance-tests/utils/peers'
+import peers from '@libp2p/interface-compliance-tests/peers'
 import * as PeerIdFactory from '@libp2p/peer-id-factory'
 import { Multiaddr } from '@multiformats/multiaddr'
 import { pair } from 'it-pair'
-import type { Stream } from '@libp2p/interfaces/connection'
+import type { Stream } from '@libp2p/interface-connection'
 
 describe('compliance tests', () => {
   tests({
