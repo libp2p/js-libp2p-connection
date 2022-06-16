@@ -1,3 +1,14 @@
+## [4.0.0](https://github.com/libp2p/js-libp2p-connection/compare/v3.0.0...v4.0.0) (2022-06-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* uses the new connection api
+
+### Trivial Changes
+
+* update deps ([#10](https://github.com/libp2p/js-libp2p-connection/issues/10)) ([7d204ec](https://github.com/libp2p/js-libp2p-connection/commit/7d204ec5203718748da3affd0a29a01f36eb3e25))
+
 ## [3.0.0](https://github.com/libp2p/js-libp2p-connection/compare/v2.0.4...v3.0.0) (2022-06-15)
 
 
