@@ -15,7 +15,7 @@ describe('compliance tests', () => {
     async setup (properties) {
       const remoteAddr = new Multiaddr('/ip4/127.0.0.1/tcp/8081')
       const remotePeer = await PeerIdFactory.createFromJSON(peers[0])
-      const openStreams: Stream[] = []
+      let openStreams: Stream[] = []
       let streamId = 0
 
       const connection = createConnection({
@@ -38,6 +38,7 @@ describe('compliance tests', () => {
             close: () => {
               void stream.sink(async function * () {}())
               connection.removeStream(stream.id)
+              openStreams = openStreams.filter(s => s.id !== id)
             },
             closeRead: () => {},
             closeWrite: () => {
@@ -46,17 +47,19 @@ describe('compliance tests', () => {
             id,
             abort: () => {},
             reset: () => {},
-            timeline: {
-              open: 0
-            }
+            stat: {
+              direction: 'outbound',
+              protocol: protocols[0],
+              timeline: {
+                open: 0
+              }
+            },
+            metadata: {}
           }
 
           openStreams.push(stream)
 
-          return {
-            stream,
-            protocol: protocols[0]
-          }
+          return stream
         },
         close: async () => {},
         getStreams: () => openStreams,

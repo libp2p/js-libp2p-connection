@@ -34,7 +34,7 @@ describe('connection tests', () => {
   it('should not require local or remote addrs', async () => {
     const remotePeer = await PeerIdFactory.createFromJSON(peers[1])
 
-    const openStreams: any[] = []
+    let openStreams: any[] = []
     let streamId = 0
 
     return createConnection({
@@ -56,6 +56,8 @@ describe('connection tests', () => {
           ...pair<Uint8Array>(),
           close: () => {
             void stream.sink(async function * () {}())
+
+            openStreams = openStreams.filter(s => s.id !== id)
           },
           closeRead: () => {},
           closeWrite: () => {
@@ -64,17 +66,19 @@ describe('connection tests', () => {
           id,
           abort: () => {},
           reset: () => {},
-          timeline: {
-            open: 0
-          }
+          stat: {
+            direction: 'outbound',
+            protocol: protocols[0],
+            timeline: {
+              open: 0
+            }
+          },
+          metadata: {}
         }
 
         openStreams.push(stream)
 
-        return {
-          stream,
-          protocol: protocols[0]
-        }
+        return stream
       },
       close: async () => {},
       getStreams: () => openStreams
